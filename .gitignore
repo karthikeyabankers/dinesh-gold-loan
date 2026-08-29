@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+service-account.json
+.env.example
+
+# Python backend
+backend/.venv/
+backend/__pycache__/
+backend/*.json
+!backend/.env.example

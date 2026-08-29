@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: dinesh-gold-loan
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: SPREADSHEET_ID
+        sync: false
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: SEED_DEFAULT_USERS
+        value: "false"
+      - key: SESSION_TTL_SECONDS
+        value: "3600"
+      - key: LOGIN_MAX_ATTEMPTS
+        value: "5"
+      - key: LOGIN_LOCKOUT_SECONDS
+        value: "300"
+      - key: GEMINI_MODEL
+        value: "gemini-2.0-flash"
+      - key: GEMINI_API_KEY
+        sync: false
