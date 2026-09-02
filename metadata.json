@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Dinesh Gold Loan",
+  "description": "Gold loan pledge management system integrated with Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
