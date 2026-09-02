@@ -18,7 +18,7 @@ class RecordIn(BaseModel):
     item_name: Optional[str] = Field(default=None, max_length=150)
     amount: float = Field(..., ge=0, le=100_000_000)
     net_weight: Optional[float] = Field(default=None, ge=0, le=100_000)
-    no_of_items: Optional[int] = Field(default=1, ge=1, le=10_000)
+    no_of_items: Optional[int] = Field(default=1, ge=0, le=10_000)
     pledge_date: Optional[str] = Field(default=None, min_length=1, max_length=40)
     release_date: Optional[str] = Field(default="", max_length=40)
     locker: Optional[str] = Field(default="", max_length=50)
@@ -69,7 +69,7 @@ class PendingSubmissionIn(BaseModel):
     item_name: Optional[str] = Field(default=None, max_length=150)
     amount: float = Field(..., ge=0, le=100_000_000)
     net_weight: Optional[float] = Field(default=None, ge=0, le=100_000)
-    no_of_items: Optional[int] = Field(default=1, ge=1, le=10_000)
+    no_of_items: Optional[int] = Field(default=1, ge=0, le=10_000)
     pledge_date: Optional[str] = Field(default=None, min_length=1, max_length=40)
     locker: Optional[str] = Field(default="", max_length=50)
 
